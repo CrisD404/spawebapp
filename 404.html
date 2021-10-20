@@ -1,0 +1,21 @@
+<h1>404 not found</h1>
+
+<h2>Redireccionando al inicio en <span class="cd">5</span></h2>
+
+<style>
+    * {
+        background-color: red;
+    }
+</style>
+
+<script>
+    console.log('404 page');
+    let cd = document.querySelector('.cd');
+    let cdInterval = setInterval(() => {
+        cd.innerHTML -= 1;
+    }, 1000)
+    setTimeout(() => {
+        clearInterval(cdInterval);
+        go('home');
+    }, 5000)
+</script>
